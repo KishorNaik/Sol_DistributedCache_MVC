@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<distributed-cache name="Content1" enabled="true" expires-after="@TimeSpan.FromSeconds(10)">
+    <h3>This content is cached : @DateTime.Now</h3>
+</distributed-cache>
+
